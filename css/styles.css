@@ -13,13 +13,6 @@ body{
 
 
 
-.circle{
- background-color: black;
- border-radius: 50%;
-width: 2em;
-height: 2em;
-display: inline-block;
-}
 
 .controller{
     background-color: #333333;
@@ -37,9 +30,9 @@ display: inline-block;
 .controller::after{
     content:"";
     position: absolute;
-    width: 175px;
-    height: 520px;
-    border: 10px solid rgba(0, 0, 0, .1);
+    width: 185px;
+    height: 508px;
+    border: 16px solid rgba(0, 0, 0, .1);
 }
 
 
@@ -58,3 +51,67 @@ display: inline-block;
 }
 
 
+.controller-left,
+.controller-right{
+    position: relative;
+}
+
+.controller-left,
+.controller-right{
+    position: absolute;
+}
+
+
+.controller-left{
+    top: 0;
+    left: 0;
+}
+
+.controller-right{
+    top: 0;
+    right: 0;
+}
+
+
+
+.controller-joystick{
+    position:absolute;
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    background-color: black;
+    z-index: 10;
+    border: 15px solid black;
+    border-radius: 50%;
+}
+
+
+.controller-left .controller-joystick{
+    top: 60px;
+    left: 50px;
+}
+
+.controller-right .controller-joystick{
+    top: 250px;
+    right: 60px;
+}
+
+
+
+.buttons{
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    top: 235px;
+    left: 32px;
+    transform: rotate(45deg);
+}
+
+.button{
+    background-color: black;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: inline-block;
+    margin: 8px;
+   }
