@@ -85,7 +85,7 @@ body{
     height: 105px;
     background-color: black;
     z-index: 10;
-    border: 15px solid black;
+    border: 8px solid rgb(26, 25, 25);
     border-radius: 50%;
 }
 
@@ -110,6 +110,12 @@ body{
     transform: rotate(45deg);
 }
 
+.buttons div:hover{
+    color: blue;
+    background-color: blue;
+}
+
+
 .controller-left .buttons{
     top: 235px;
     left: 32px;
@@ -121,7 +127,6 @@ body{
 }
 
 
-
 .button{
     background-color: black;
     border-radius: 50%;
@@ -129,6 +134,7 @@ body{
     height: 45px;
     display: inline-block;
     margin: 8px;
+    border: 6px solid rgb(26, 25, 25);
    }
 
 .button-home,
