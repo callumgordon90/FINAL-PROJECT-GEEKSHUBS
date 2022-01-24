@@ -101,11 +101,22 @@ body{
 .buttons{
     width: 140px;
     height: 140px;
+    z-index: 1;
     position: absolute;
-    top: 235px;
-    left: 32px;
     transform: rotate(45deg);
 }
+
+.controller-left .buttons{
+    top: 235px;
+    left: 32px;
+}
+
+.controller-right .buttons{
+    top: 65px;
+    left: -35px;
+}
+
+
 
 .button{
     background-color: black;
@@ -115,3 +126,32 @@ body{
     display: inline-block;
     margin: 8px;
    }
+
+.button-home,
+.button-capture {
+    position: absolute;
+    z-index: 1;
+    top: 400px;
+}
+
+
+
+
+.button-home{
+    border-radius: 25%;
+    left: 110px;
+    
+}
+
+.button-capture{
+   right: 120px; 
+}
+
+.button-top{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: black;
+    border-radius: 150px;
+    z-index: -1;
+}
