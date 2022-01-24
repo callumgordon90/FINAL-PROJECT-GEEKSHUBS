@@ -11,12 +11,16 @@ body{
     position: relative;
 }
 
-
-
+.screen {
+    position: relative;
+    z-index: 1;
+    top: 95px;
+    left: 325px;
+}
 
 .controller{
     background-color: #333333;
-    width: 600px;
+    width: 1200px;
     height: 540px;
     position: absolute;
 
