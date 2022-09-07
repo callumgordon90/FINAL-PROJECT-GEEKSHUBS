@@ -76,8 +76,6 @@ body {
     right: 0;
 }
 
-
-
 .controller-joystick {
     position: absolute;
     display: inline-block;
@@ -175,4 +173,9 @@ body {
     background-color: black;
     border-radius: 150px;
     z-index: -1;
+}
+
+.button-top:hover {
+    color: blue;
+    background-color: blue;
 }
