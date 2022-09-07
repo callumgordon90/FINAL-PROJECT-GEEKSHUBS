@@ -1,13 +1,13 @@
+* {
+    box-sizing: border-box;
+}
 
 
-*{box-sizing: border-box;}
-
-
-body{
+body {
     height: 100vh;
 }
 
-body{
+body {
     position: relative;
 }
 
@@ -18,7 +18,7 @@ body{
     left: 325px;
 }
 
-.controller{
+.controller {
     background-color: #333333;
     width: 1200px;
     height: 540px;
@@ -27,12 +27,12 @@ body{
     transform: translateX(-50%) translateY(-50%);
     left: 50%;
     top: 50%;
-    border-radius: 96px; 
+    border-radius: 96px;
 }
 
 .controller::before,
-.controller::after{
-    content:"";
+.controller::after {
+    content: "";
     position: absolute;
     width: 185px;
     height: 508px;
@@ -40,14 +40,14 @@ body{
 }
 
 
-.controller::before{
+.controller::before {
     background-color: #00BBE3;
     border-right: none;
     border-radius: 96px 0 0 96px;
-   
+
 }
 
-.controller::after{
+.controller::after {
     background-color: red;
     right: 0;
     border-left: none;
@@ -56,30 +56,30 @@ body{
 
 
 .controller-left,
-.controller-right{
+.controller-right {
     position: relative;
 }
 
 .controller-left,
-.controller-right{
+.controller-right {
     position: absolute;
 }
 
 
-.controller-left{
+.controller-left {
     top: 0;
     left: 0;
 }
 
-.controller-right{
+.controller-right {
     top: 0;
     right: 0;
 }
 
 
 
-.controller-joystick{
-    position:absolute;
+.controller-joystick {
+    position: absolute;
     display: inline-block;
     width: 105px;
     height: 105px;
@@ -89,20 +89,25 @@ body{
     border-radius: 50%;
 }
 
+.controller-joystick:hover {
+    color: blue;
+    background-color: blue;
+}
 
-.controller-left .controller-joystick{
+
+.controller-left .controller-joystick {
     top: 60px;
     left: 50px;
 }
 
-.controller-right .controller-joystick{
+.controller-right .controller-joystick {
     top: 250px;
     right: 60px;
 }
 
 
 
-.buttons{
+.buttons {
     width: 140px;
     height: 140px;
     z-index: 1;
@@ -110,24 +115,24 @@ body{
     transform: rotate(45deg);
 }
 
-.buttons div:hover{
+.buttons div:hover {
     color: blue;
     background-color: blue;
 }
 
 
-.controller-left .buttons{
+.controller-left .buttons {
     top: 235px;
     left: 32px;
 }
 
-.controller-right .buttons{
+.controller-right .buttons {
     top: 65px;
     left: -35px;
 }
 
 
-.button{
+.button {
     background-color: black;
     border-radius: 50%;
     width: 45px;
@@ -135,7 +140,8 @@ body{
     display: inline-block;
     margin: 8px;
     border: 6px solid rgb(26, 25, 25);
-   }
+}
+
 
 .button-home,
 .button-capture {
@@ -147,17 +153,22 @@ body{
 
 
 
-.button-home{
+.button-home {
     border-radius: 25%;
     left: 110px;
-    
+
 }
 
-.button-capture{
-   right: 120px; 
+.button:hover {
+    color: blue;
+    background-color: blue;
 }
 
-.button-top{
+.button-capture {
+    right: 120px;
+}
+
+.button-top {
     position: relative;
     width: 150px;
     height: 150px;
